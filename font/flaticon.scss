@@ -1,0 +1,57 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?f48fd2c6df904394986b78b48d0841ec") format("truetype"),
+url("./flaticon.woff?f48fd2c6df904394986b78b48d0841ec") format("woff"),
+url("./flaticon.woff2?f48fd2c6df904394986b78b48d0841ec") format("woff2"),
+url("./flaticon.eot?f48fd2c6df904394986b78b48d0841ec#iefix") format("embedded-opentype"),
+url("./flaticon.svg?f48fd2c6df904394986b78b48d0841ec#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "telephone": "\f101",
+    "behance": "\f102",
+    "mail": "\f103",
+    "upload": "\f104",
+    "linkedin": "\f105",
+    "instagram": "\f106",
+    "dry-clean": "\f107",
+    "shining": "\f108",
+);
+
+.flaticon-telephone:before {
+    content: map-get($flaticon-map, "telephone");
+}
+.flaticon-behance:before {
+    content: map-get($flaticon-map, "behance");
+}
+.flaticon-mail:before {
+    content: map-get($flaticon-map, "mail");
+}
+.flaticon-upload:before {
+    content: map-get($flaticon-map, "upload");
+}
+.flaticon-linkedin:before {
+    content: map-get($flaticon-map, "linkedin");
+}
+.flaticon-instagram:before {
+    content: map-get($flaticon-map, "instagram");
+}
+.flaticon-dry-clean:before {
+    content: map-get($flaticon-map, "dry-clean");
+}
+.flaticon-shining:before {
+    content: map-get($flaticon-map, "shining");
+}
